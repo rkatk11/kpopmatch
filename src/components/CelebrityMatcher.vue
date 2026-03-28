@@ -1,13 +1,18 @@
 <template>
   <div class="container">
     <div class="ad-container top-ad">
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-2562447876905458"
-           data-ad-slot="1234567890"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <p class="ad-label">ADVERTISEMENT</p>
+      <div class="coupang-section">
+        <a href="https://link.coupang.com/a/edatVM" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/976102?subId=&traceId=V0-301-879dd1202e5c73b2-I976102&w=728&h=90" alt=""></a>
+      </div>
+      <div class="coupang-section">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-2562447876905458"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <p class="ad-label">ADVERTISEMENT</p>
+      </div>
     </div>
 
     <div class="lang-selector">

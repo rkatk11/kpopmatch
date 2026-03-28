@@ -1,7 +1,4 @@
 <template>
-  <div class="coupang-section">
-      <a href="https://link.coupang.com/a/edatVM" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/976102?subId=&traceId=V0-301-879dd1202e5c73b2-I976102&w=728&h=90" alt=""></a>
-  </div>
   <CelebrityMatcher />
   <div ref="adRef" class="ad-container">
     <ins class="kakao_ad_area" style="display:none;"
