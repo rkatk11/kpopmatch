@@ -29,6 +29,10 @@
       <h1>{{ $t('title') }}</h1>
       <p>{{ $t('subtitle') }}</p>
       <p class="subtitle-notice">{{ $t('subtitle2') }}</p>
+      <p class="info-text">{{ $t('info1') }}</p>
+      <a href="https://www.instagram.com/webdev__yun" target="_blank" class="insta-link">
+        <span class="insta-icon">@</span>webdev__yun
+      </a>
 <!--      <button class="analyze-btn copy-main-btn" @click="copyLink2">
         {{ $t('button1') }}
       </button>-->
@@ -615,5 +619,44 @@ img { object-fit: cover; width: 100%; height: 100%; cursor: pointer; }
   color: white;
 }
 .share-btn.link { background: #95a5a6; color: white; }
+
+/* 부모 컨테이너 */
+/* 설명 문구 (더 연한 회색) */
+.info-text {
+  font-size: 12px;
+  color: #adb5bd; /* 부드러운 파스텔 그레이 */
+  margin-bottom: 8px;
+}
+
+/* 인스타그램 링크 기본 스타일 */
+.insta-link {
+  font-size: 14px;
+  color: #868e96; /* 메인 파스텔 회색 */
+  text-decoration: none !important; /* 밑줄 제거 */
+  outline: none; /* 클릭 시 테두리 제거 */
+  transition: color 0.3s ease; /* 부드러운 색상 변화 */
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 마우스 올렸을 때 (살짝 더 진한 회색으로 변하게) */
+.insta-link:hover {
+  color: #495057;
+  text-decoration: none;
+}
+
+/* 클릭하는 순간 효과 제거 */
+.insta-link:active,
+.insta-link:focus {
+  background: none;
+  color: #495057;
+}
+
+/* 아이콘 부분 포인트 */
+.insta-icon {
+  font-weight: bold;
+  opacity: 0.7;
+}
 
 </style>

@@ -15,12 +15,12 @@ const messages = {
         matchRate: '일치',
         shareResult: '결과 공유하기',
         clickAnalyzeRequest: '닮은 동물 찾기 버튼을 눌러주세요',
-        // 추가된 알림 및 공유 텍스트
         copySuccess: '링크가 복사되었습니다!',
         instaGuide: "링크가 복사되었습니다! 인스타그램 스토리에서 '링크 스티커'로 공유해보세요. ✨",
         kakaoTitle: '나의 연예인 닮은꼴 찾기 ✨',
         kakaoBtn: '나도 테스트해보기',
-        xText: '나의 연예인 닮은꼴 결과는 {name}! 여러분도 확인해보세요. ✨'
+        xText: '나의 연예인 닮은꼴 결과는 {name}! 여러분도 확인해보세요. ✨',
+        info1: "운영자 개선 사항 관련 DM 문의: "
     },
     en: {
         title: 'Animal Face Match AI',
@@ -40,27 +40,29 @@ const messages = {
         instaGuide: "Link copied! Share it using the 'Link Sticker' on Instagram Stories. ✨",
         kakaoTitle: 'Find My Celebrity Look-alike ✨',
         kakaoBtn: 'Try it myself',
-        xText: 'My celebrity look-alike is {name}! Check yours now. ✨'
+        xText: 'My celebrity look-alike is {name}! Check yours now. ✨',
+        info1: "Contact Developer via Instagram DM: "
     },
     ja: {
         title: '動物顔診断 AI',
-        subtitle: '私はネコ顔？イヌ顔？似ている動物를 진단해, 友達에 쉐어합시다!',
-        subtitle2: '업로드된 사진은 서버에 저장되지 않으므로 안심하십시오.',
-        button1: '사이트 링크 복사',
-        loading: 'AI 모델을 로딩 중...',
-        placeholder: '클릭하여 사진 업로드',
-        analyze: '닮은 동물 찾기',
-        analyzing: '분석 중...',
-        resultTitle: '당신에게 가장 닮은 동물은',
-        resultTitle2: '초상화 영역을 클릭하면 다양한 사진을 확인할 수 있습니다!',
-        matchRate: '일치',
-        shareResult: '결과 공유하기',
-        clickAnalyzeRequest: '「닮은 동물 찾기」 버튼을 눌러주세요',
-        copySuccess: '링크가 복사되었습니다!',
-        instaGuide: "링크가 복사되었습니다! 인스타그램 스토리의 '링크 스티커'로 공유해보세요. ✨",
-        kakaoTitle: '나의 닮은꼴 찾기 ✨',
-        kakaoBtn: '나도 해보기',
-        xText: '내 닮은꼴 결과는 {name}! 여러분도 확인해보세요. ✨'
+        subtitle: '私はネコ顔？イヌ顔？似ている動物を診断して、友達にシェアしましょう！',
+        subtitle2: 'アップロードされた写真はサーバーに保存されませんのでご安心ください。',
+        button1: 'サイトリンクをコピー',
+        loading: 'AIモデルをロード中...',
+        placeholder: 'クリックして写真をアップロード',
+        analyze: '似ている動物を探す',
+        analyzing: '分析中...',
+        resultTitle: 'あなたに最も似ている動物は',
+        resultTitle2: '肖像画エリアをクリックすると、様々な写真を確認できます！',
+        matchRate: '一致',
+        shareResult: '結果を共有する',
+        clickAnalyzeRequest: '「似ている動物を探す」ボタンを押してください',
+        copySuccess: 'リンクがコピーされました！',
+        instaGuide: "リンクがコピーされました！Instagramストーリーの「リンクステッカー」で共有してみてください。 ✨",
+        kakaoTitle: '私の芸能人そっくりさん診断 ✨',
+        kakaoBtn: '私もやってみる',
+        xText: '私の芸能人そっくりさんの結果は {name}! 皆さんもチェックしてみてください。 ✨',
+        info1: "運営者への改善要望(DM): "
     },
     zh: {
         title: '动物相匹配 AI',
@@ -80,7 +82,8 @@ const messages = {
         instaGuide: "链接已复制！请在 Instagram Story 中使用“链接贴纸”分享。✨",
         kakaoTitle: '寻找我的明星脸 ✨',
         kakaoBtn: '我也要去测试',
-        xText: '我最像的明星是 {name}！快来测试你的吧。 ✨'
+        xText: '我最像的明星是 {name}！快来测试你的吧。 ✨',
+        info1: "运营者改进建议 DM 联系: "
     }
 };
 

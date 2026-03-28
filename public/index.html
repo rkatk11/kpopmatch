@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko"> <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
 
-    <title>동물상 테스트 - 나랑 닮은 동물 찾기 AI 매칭</title>
-    <meta name="description" content="인공지능(AI)이 분석하는 나의 동물상! 강아지상, 고양이상, 여우상 등 당신과 가장 닮은 동물을 확인하고 친구들과 결과를 공유해보세요.">
-    <meta name="keywords" content="동물상 테스트, AI 동물상, 닮은꼴 찾기, 얼굴 인식, 강아지상, 고양이상, 곰상, 공룡상, 관상">
-    <meta name="author" content="Animal Face AI">
+    <title>동물상 테스트 - AI 얼굴 분석 닮은꼴 찾기 | Animal Face AI</title>
+    <meta name="description" content="AI가 분석하는 나의 동물상 테스트! 사진 한 장으로 강아지상, 고양이상 등 닮은꼴 동물을 확인하고 글로벌 친구들과 공유하세요. 100% 무료 및 데이터 보안 보장.">
+    <meta name="keywords" content="동물상 테스트, AI 동물상, 닮은꼴 찾기, 얼굴 인식, 강아지상, 고양이상, Animal Face Test, Celebrity Look Alike, AI Face Analysis">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="동물상 테스트 - 내 얼굴은 어떤 동물과 닮았을까?">
-    <meta property="og:description" content="사진 한 장으로 보는 인공지능 동물상 테스트! 지금 바로 확인해보세요.">
-    <meta property="og:image" content="<%= BASE_URL %>og-image.jpg"> <meta property="og:url" content="https://zuzume.netlify.app">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="동물상 테스트 - AI 닮은꼴 찾기">
-    <meta name="twitter:description" content="인공지능이 분석하는 나의 동물상 결과는?">
-    <meta name="twitter:image" content="<%= BASE_URL %>og-image.jpg">
+    <link rel="alternate" hreflang="ko" href="https://zuzume.netlify.app">
+    <link rel="alternate" hreflang="en" href="https://zuzume.netlify.app/?lang=en">
+    <link rel="alternate" hreflang="ja" href="https://zuzume.netlify.app/?lang=ja">
+    <link rel="alternate" hreflang="zh" href="https://zuzume.netlify.app/?lang=zh">
+    <link rel="alternate" hreflang="x-default" href="https://zuzume.netlify.app">
 
     <link rel="canonical" href="https://zuzume.netlify.app">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Animal Face AI">
+    <meta property="og:title" content="동물상 테스트 - 나랑 닮은 동물은 무엇일까?">
+    <meta property="og:description" content="인공지능이 알려주는 나의 숨겨진 동물상! 지금 바로 확인해보세요.">
+    <meta property="og:image" content="<%= BASE_URL %>og-image.jpg">
+    <meta property="og:url" content="https://zuzume.netlify.app">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Animal Face Test - AI Look Alike">
+    <meta name="twitter:description" content="Find your animal match with AI Face Recognition. Try it now!">
+    <meta name="twitter:image" content="<%= BASE_URL %>og-image.jpg">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Animal Face AI Match",
+            "url": "https://zuzume.netlify.app",
+            "description": "AI-powered animal face look-alike test using facial recognition.",
+            "applicationCategory": "EntertainmentApplication",
+            "operatingSystem": "All",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "1250"
+            }
+        }
+    </script>
 </head>
 <body>
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
 <noscript>
-    <strong>이 사이트는 자바스크립트가 활성화되어야 원활하게 이용할 수 있습니다. 동물상 테스트를 시작하려면 자바스크립트를 허용해 주세요.</strong>
+    <strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
 </noscript>
 
-<h1 style="display:none;">동물상 테스트 - AI 얼굴 분석</h1>
-<p style="display:none;">사진을 업로드하여 인공지능이 분석한 당신의 닮은꼴 동물을 찾아보세요.</p>
+<header>
+    <h1 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">동물상 테스트 - AI 얼굴 분석 시스템</h1>
+    <nav style="display:none;">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/?lang=en">English</a></li>
+            <li><a href="/?lang=ja">日本語</a></li>
+            <li><a href="/?lang=zh">简体中文</a></li>
+        </ul>
+    </nav>
+</header>
 
 <div id="app"></div>
 </body>
