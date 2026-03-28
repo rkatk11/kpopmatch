@@ -1,7 +1,6 @@
 <template>
   <div class="coupang-section">
-    <div class="product-card" @click="getCoupangLink()">
-    </div>
+    <iframe src="https://ads-partners.coupang.com/widgets.html?id=976102&template=banner&trackingCode=AF3080343&subId=&width=728&height=90" width="728" height="90" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
   </div>
   <CelebrityMatcher />
   <div ref="adRef" class="ad-container">
