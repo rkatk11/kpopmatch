@@ -1,44 +1,80 @@
 <template>
   <CelebrityMatcher />
-  <div ref="adRef" class="ad-container">
-    <ins class="kakao_ad_area" style="display:none;"
-         data-ad-unit = "DAN-csVZOfNQ8JqIuTsl"
-         data-ad-width = "300"
-         data-ad-height = "250"></ins>
-  </div>
 </template>
 
 <script setup>
 import CelebrityMatcher from './components/CelebrityMatcher.vue';
-
-import { onMounted, ref } from 'vue';
-const adRef = ref(null);
-
-// [주의] 본인의 쿠팡 파트너스 ID가 포함된 검색 URL을 사용하세요.
-// 쿠팡 파트너스 대시보드 > 링크 생성 > 검색어 링크에서 생성 가능합니다.
-const getCoupangLink = (animalName) => {
-  // 쿠팡 파트너스에서 생성한 본인의 고유 ID가 포함된 기본 URL
-  const baseSearchUrl = "https://link.coupang.com/a/AF3080343"; // 여기에 본인 링크 입력
-
-  // 검색어(animalName)를 쿼리 파라미터로 붙여서 이동하도록 구성
-  // (쿠팡 링크 생성기에서 '검색어'를 포함해 링크를 만들면 더 정확합니다)
-  window.open(`${baseSearchUrl}&q=${encodeURIComponent('반려동물')}`, '_blank')
-};
-
-
-onMounted(() => {
-  // 이미 로드된 스크립트가 있다면 광고를 렌더링하도록 유도
-  try {
-    if (window.adfit) {
-      // 컴포넌트가 마운트될 때 수동으로 호출할 필요는 없으나
-      // SPA 특성상 안 나올 경우를 대비해 설정 확인 가능
-    }
-  } catch (e) {
-    console.error('AdFit Error:', e);
-  }
-});
 </script>
 <style>
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+  flex-wrap: wrap; /* 화면이 작아지면 자동으로 줄바꿈 */
+}
+
+.share-buttons button {
+  /* 버튼 기본 구조 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 호버 효과: 살짝 커지면서 그림자 강화 */
+.share-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 클릭 효과: 눌리는 느낌 */
+.share-buttons button:active {
+  transform: translateY(0);
+}
+
+/* 각 플랫폼 브랜드 컬러 (그라데이션으로 세련되게) */
+
+/* Instagram: 인스타 특유의 퍼플-핑크-오렌지 그라데이션 */
+.btn-insta {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+
+/* TikTok: 블랙 베이스에 네온 핑크/사이안 포인트 느낌 */
+.btn-tiktok {
+  background: #010101;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* 틱톡 로고의 입체감 있는 섀도우 효과 */
+  text-shadow: 1px 1px #ff0050, -1px -1px #00f2ea;
+}
+
+/* X (Twitter): 깔끔한 블랙 혹은 다크 그레이 */
+.btn-x {
+  background: #000000;
+  border: 1px solid #333;
+}
+
+/* 모바일 대응: 버튼이 너무 작아지지 않게 조절 */
+@media (max-width: 480px) {
+  .share-buttons {
+    gap: 8px;
+  }
+  .share-buttons button {
+    flex: 1 1 calc(33.333% - 10px); /* 3열 정렬 */
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+}
+
 body {
   margin: 0;
   background-color: #f0f2f5;
