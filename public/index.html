@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
+<html lang="ko">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+
+    <title>동물상 테스트 - 나랑 닮은 동물 찾기 AI 매칭</title>
+    <meta name="description" content="인공지능(AI)이 분석하는 나의 동물상! 강아지상, 고양이상, 여우상 등 당신과 가장 닮은 동물을 확인하고 친구들과 결과를 공유해보세요.">
+    <meta name="keywords" content="동물상 테스트, AI 동물상, 닮은꼴 찾기, 얼굴 인식, 강아지상, 고양이상, 곰상, 공룡상, 관상">
+    <meta name="author" content="Animal Face AI">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="동물상 테스트 - 내 얼굴은 어떤 동물과 닮았을까?">
+    <meta property="og:description" content="사진 한 장으로 보는 인공지능 동물상 테스트! 지금 바로 확인해보세요.">
+    <meta property="og:image" content="<%= BASE_URL %>og-image.jpg"> <meta property="og:url" content="https://zuzume.netlify.app">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="동물상 테스트 - AI 닮은꼴 찾기">
+    <meta name="twitter:description" content="인공지능이 분석하는 나의 동물상 결과는?">
+    <meta name="twitter:image" content="<%= BASE_URL %>og-image.jpg">
+
+    <link rel="canonical" href="https://zuzume.netlify.app">
+</head>
+<body>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<noscript>
+    <strong>이 사이트는 자바스크립트가 활성화되어야 원활하게 이용할 수 있습니다. 동물상 테스트를 시작하려면 자바스크립트를 허용해 주세요.</strong>
+</noscript>
+
+<h1 style="display:none;">동물상 테스트 - AI 얼굴 분석</h1>
+<p style="display:none;">사진을 업로드하여 인공지능이 분석한 당신의 닮은꼴 동물을 찾아보세요.</p>
+
+<div id="app"></div>
+</body>
 </html>
