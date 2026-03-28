@@ -1,6 +1,8 @@
 <template>
   <div class="coupang-section">
-    <iframe src="https://ads-partners.coupang.com/widgets.html?id=976102&template=banner&trackingCode=AF3080343&subId=&width=728&height=90" width="728" height="90" frameborder="0" scrolling="no" referrerpolicy="unsafe-url" browsingtopics></iframe>
+    <div class="product-card">
+      <a href="https://link.coupang.com/a/edatVM" target="_blank" referrerpolicy="unsafe-url"><img src="https://ads-partners.coupang.com/banners/976102?subId=&traceId=V0-301-879dd1202e5c73b2-I976102&w=728&h=90" alt=""></a>
+    </div>
   </div>
   <CelebrityMatcher />
   <div ref="adRef" class="ad-container">
