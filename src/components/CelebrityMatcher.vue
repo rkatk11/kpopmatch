@@ -534,7 +534,8 @@ img { object-fit: cover; width: 100%; height: 100%; cursor: pointer; }
 
 .ad-container { margin: 15px 0; background-color: rgba(255, 255, 255, 0.95); border: 1px solid #eee; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
 .ad-label { font-size: 10px; color: #aaa; margin-top: 4px; }
-.top-ad { min-height: 90px; width: 100%; }
+.top-ad { min-height: 90px; width: 100%; display: flex;
+  flex-direction: row; }
 .middle-ad { min-height: 250px; width: 100%; max-width: 320px; margin: 25px auto; }
 
 .results-wrapper { display: flex; align-items: center; justify-content: center; gap: 20px; margin-top: 20px; }

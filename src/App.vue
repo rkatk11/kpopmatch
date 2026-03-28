@@ -51,6 +51,7 @@ body {
 }
 
 .coupang-section {
+  flex: 1;
   padding: 0 10px;
 }
 .ad-notice { font-size: 10px; color: #bbb; text-align: right; margin-bottom: 5px; }
